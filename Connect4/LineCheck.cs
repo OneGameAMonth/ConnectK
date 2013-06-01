@@ -40,7 +40,7 @@ public class LineCheck
             counter++;  
         }
 
-        for(int j = column-1;  j<data.ColumnCount; j++)  
+        for(int j = column+1;  j<data.ColumnCount; j++)  
         {  
             if(data[j, row].Style.BackColor != playerColor)  
                 break;  
@@ -54,7 +54,7 @@ public class LineCheck
 
     private bool verticalCheck(int row, int column, Color playerColor)
     {  
-        if (row >= data.RowCount - lineSize - 1)  {  
+        if (row >= data.RowCount - lineSize + 1)  {  
             return false;  
         }
 
@@ -62,7 +62,7 @@ public class LineCheck
         {  
             if (data[column, i].Style.BackColor != playerColor)  
             {  
-                return false;  
+                return false; 
             }  
         }  
         return true;  
@@ -76,9 +76,9 @@ public class LineCheck
         int tempRow = row - 1;
         int tempColumn = column - 1;
 
-        while (row >= 0 && column >= 0)
+        while (tempRow >= 0 && tempColumn >= 0)
         {
-            if (data[column, row].Style.BackColor == playerColor)
+            if (data[tempColumn, tempRow].Style.BackColor == playerColor)
             {
                 counter++;
                 tempRow--;
@@ -111,9 +111,9 @@ public class LineCheck
         int tempRow = row + 1;
         int tempColumn = column - 1;
 
-        while (row < data.RowCount && column >= 0)
+        while (tempRow < data.RowCount && tempColumn >= 0)
         {
-            if (data[column, row].Style.BackColor == playerColor)
+            if (data[tempColumn, tempRow].Style.BackColor == playerColor)
             {
                 counter++;
                 tempRow++;
