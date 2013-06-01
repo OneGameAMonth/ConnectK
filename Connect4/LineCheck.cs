@@ -10,8 +10,8 @@ using System.Windows.Forms;
 
 public class LineCheck
 {
-    private static DataGridView data;
-    private static int lineSize;
+    private DataGridView data;
+    private int lineSize;
 
     public LineCheck(DataGridView dataGrid, int lineCheckSize)
     {
