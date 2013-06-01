@@ -36,8 +36,8 @@
             this.numericUpDown_collumns = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown_players = new System.Windows.Forms.NumericUpDown();
             this.label3 = new System.Windows.Forms.Label();
-            this.groupBox_currentPlayer = new System.Windows.Forms.GroupBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.panel_currentPlayer = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_game)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_rows)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_collumns)).BeginInit();
@@ -54,6 +54,8 @@
             this.dataGridView_game.RowTemplate.Height = 24;
             this.dataGridView_game.Size = new System.Drawing.Size(917, 455);
             this.dataGridView_game.TabIndex = 0;
+            this.dataGridView_game.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_game_CellMouseClick);
+            this.dataGridView_game.SelectionChanged += new System.EventHandler(this.dataGridView_game_SelectionChanged);
             // 
             // numericUpDown_rows
             // 
@@ -64,11 +66,12 @@
             0,
             0});
             this.numericUpDown_rows.Minimum = new decimal(new int[] {
-            1,
+            4,
             0,
             0,
             0});
             this.numericUpDown_rows.Name = "numericUpDown_rows";
+            this.numericUpDown_rows.ReadOnly = true;
             this.numericUpDown_rows.Size = new System.Drawing.Size(57, 22);
             this.numericUpDown_rows.TabIndex = 1;
             this.numericUpDown_rows.Value = new decimal(new int[] {
@@ -79,7 +82,7 @@
             // 
             // button_start
             // 
-            this.button_start.Location = new System.Drawing.Point(754, 496);
+            this.button_start.Location = new System.Drawing.Point(769, 500);
             this.button_start.Name = "button_start";
             this.button_start.Size = new System.Drawing.Size(75, 23);
             this.button_start.TabIndex = 2;
@@ -114,7 +117,7 @@
             0,
             0});
             this.numericUpDown_collumns.Minimum = new decimal(new int[] {
-            1,
+            4,
             0,
             0,
             0});
@@ -158,14 +161,6 @@
             this.label3.TabIndex = 7;
             this.label3.Text = "Total Players:";
             // 
-            // groupBox_currentPlayer
-            // 
-            this.groupBox_currentPlayer.Location = new System.Drawing.Point(645, 498);
-            this.groupBox_currentPlayer.Name = "groupBox_currentPlayer";
-            this.groupBox_currentPlayer.Size = new System.Drawing.Size(104, 22);
-            this.groupBox_currentPlayer.TabIndex = 0;
-            this.groupBox_currentPlayer.TabStop = false;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -175,13 +170,20 @@
             this.label4.TabIndex = 9;
             this.label4.Text = "Current Player";
             // 
+            // panel_currentPlayer
+            // 
+            this.panel_currentPlayer.Location = new System.Drawing.Point(645, 500);
+            this.panel_currentPlayer.Name = "panel_currentPlayer";
+            this.panel_currentPlayer.Size = new System.Drawing.Size(118, 23);
+            this.panel_currentPlayer.TabIndex = 10;
+            // 
             // Form_Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(942, 535);
+            this.Controls.Add(this.panel_currentPlayer);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.groupBox_currentPlayer);
             this.Controls.Add(this.numericUpDown_players);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.numericUpDown_collumns);
@@ -211,7 +213,7 @@
         private System.Windows.Forms.NumericUpDown numericUpDown_collumns;
         private System.Windows.Forms.NumericUpDown numericUpDown_players;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.GroupBox groupBox_currentPlayer;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel_currentPlayer;
     }
 }
