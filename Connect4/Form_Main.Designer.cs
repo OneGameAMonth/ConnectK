@@ -205,7 +205,7 @@
             this.Controls.Add(this.numericUpDown_rows);
             this.Controls.Add(this.dataGridView_game);
             this.Name = "Form_Main";
-            this.Text = "Form_Main";
+            this.Text = "4 in Line";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_game)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_rows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_collumns)).EndInit();
