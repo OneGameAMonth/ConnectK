@@ -192,6 +192,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(942, 535);
             this.Controls.Add(this.button_help);
             this.Controls.Add(this.panel_currentPlayer);
@@ -204,8 +205,9 @@
             this.Controls.Add(this.button_start);
             this.Controls.Add(this.numericUpDown_rows);
             this.Controls.Add(this.dataGridView_game);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form_Main";
-            this.Text = "4 in Line";
+            this.Text = "Connect K";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_game)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_rows)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown_collumns)).EndInit();
