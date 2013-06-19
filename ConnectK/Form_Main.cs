@@ -25,8 +25,8 @@ namespace Connect4
         public Form_Main()
         {
             InitializeComponent();
+            lineChecker = new LineCheck(dataGridView_game, (int)numericUpDown_connectk.Value);
             startGame();
-            lineChecker = new LineCheck(dataGridView_game, 4);
         }
 
         private void updatePlayerColor()
@@ -50,6 +50,7 @@ namespace Connect4
 
             dataGridView_game.Rows.Clear();
             dataGridView_game.Columns.Clear();
+            lineChecker.lineSize = (int)numericUpDown_connectk.Value;
 
             for (int i = 1; i <= numericUpDown_collumns.Value; i++)
             {
@@ -108,7 +109,7 @@ namespace Connect4
                 return;
             }
 
-            if (e.RowIndex == -1) return; //Header
+            if (e.RowIndex == -1 || e.ColumnIndex == -1) return; //Header
 
             DataGridViewCell cell = dataGridView_game[e.ColumnIndex, e.RowIndex];
             if (cell.Style.BackColor == Color.White)

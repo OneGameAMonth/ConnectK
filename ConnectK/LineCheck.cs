@@ -11,7 +11,7 @@ using System.Windows.Forms;
 public class LineCheck
 {
     private DataGridView data;
-    private int lineSize;
+    public int lineSize;
 
     public LineCheck(DataGridView dataGrid, int lineCheckSize)
     {
