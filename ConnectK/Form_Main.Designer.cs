@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_Main));
             this.dataGridView_game = new System.Windows.Forms.DataGridView();
             this.numericUpDown_rows = new System.Windows.Forms.NumericUpDown();
             this.button_start = new System.Windows.Forms.Button();
@@ -52,12 +53,14 @@
             // 
             this.dataGridView_game.AllowUserToAddRows = false;
             this.dataGridView_game.AllowUserToDeleteRows = false;
+            this.dataGridView_game.AllowUserToResizeColumns = false;
+            this.dataGridView_game.AllowUserToResizeRows = false;
             this.dataGridView_game.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_game.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_game.Location = new System.Drawing.Point(10, 20);
-            this.dataGridView_game.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView_game.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView_game.Name = "dataGridView_game";
             this.dataGridView_game.RowHeadersVisible = false;
             this.dataGridView_game.RowTemplate.Height = 24;
@@ -70,7 +73,7 @@
             // 
             this.numericUpDown_rows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.numericUpDown_rows.Location = new System.Drawing.Point(49, 294);
-            this.numericUpDown_rows.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown_rows.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown_rows.Maximum = new decimal(new int[] {
             50,
             0,
@@ -95,7 +98,7 @@
             // 
             this.button_start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_start.Location = new System.Drawing.Point(362, 322);
-            this.button_start.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_start.Margin = new System.Windows.Forms.Padding(2);
             this.button_start.Name = "button_start";
             this.button_start.Size = new System.Drawing.Size(56, 19);
             this.button_start.TabIndex = 2;
@@ -129,7 +132,7 @@
             // 
             this.numericUpDown_collumns.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.numericUpDown_collumns.Location = new System.Drawing.Point(152, 294);
-            this.numericUpDown_collumns.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown_collumns.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown_collumns.Maximum = new decimal(new int[] {
             50,
             0,
@@ -153,7 +156,7 @@
             // 
             this.numericUpDown_players.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.numericUpDown_players.Location = new System.Drawing.Point(388, 294);
-            this.numericUpDown_players.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown_players.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown_players.Maximum = new decimal(new int[] {
             8,
             0,
@@ -199,7 +202,7 @@
             // 
             this.panel_currentPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.panel_currentPlayer.Location = new System.Drawing.Point(269, 322);
-            this.panel_currentPlayer.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel_currentPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.panel_currentPlayer.Name = "panel_currentPlayer";
             this.panel_currentPlayer.Size = new System.Drawing.Size(88, 19);
             this.panel_currentPlayer.TabIndex = 10;
@@ -208,7 +211,7 @@
             // 
             this.button_help.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.button_help.Location = new System.Drawing.Point(9, 321);
-            this.button_help.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button_help.Margin = new System.Windows.Forms.Padding(2);
             this.button_help.Name = "button_help";
             this.button_help.Size = new System.Drawing.Size(54, 20);
             this.button_help.TabIndex = 11;
@@ -270,7 +273,9 @@
             this.Controls.Add(this.button_start);
             this.Controls.Add(this.numericUpDown_rows);
             this.Controls.Add(this.dataGridView_game);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(452, 389);
             this.Name = "Form_Main";
             this.Text = "Connect K";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_game)).EndInit();
