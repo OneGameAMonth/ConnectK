@@ -133,9 +133,10 @@ namespace Connect4
 
         private void button_help_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Click on the white slots to do your move");
+            new Form_Help().ShowDialog();
+            /*MessageBox.Show("Click on the white slots to do your move");
             MessageBox.Show("Select the number of players, rows and collums, and hit the button 'Start'");
-            MessageBox.Show("The player that puts Four (4) equal Colors in line wins.");
+            MessageBox.Show("The player that puts Four (4) equal Colors in line wins.");*/
         }
     }
 }
