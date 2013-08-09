@@ -58,6 +58,7 @@
             this.dataGridView_game.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView_game.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_game.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView_game.Location = new System.Drawing.Point(10, 20);
             this.dataGridView_game.Margin = new System.Windows.Forms.Padding(2);
@@ -96,7 +97,7 @@
             // 
             // button_start
             // 
-            this.button_start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.button_start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.button_start.Location = new System.Drawing.Point(362, 322);
             this.button_start.Margin = new System.Windows.Forms.Padding(2);
             this.button_start.Name = "button_start";
@@ -154,7 +155,7 @@
             // 
             // numericUpDown_players
             // 
-            this.numericUpDown_players.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.numericUpDown_players.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown_players.Location = new System.Drawing.Point(388, 294);
             this.numericUpDown_players.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown_players.Maximum = new decimal(new int[] {
@@ -178,7 +179,7 @@
             // 
             // label3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(317, 297);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -189,7 +190,7 @@
             // 
             // label4
             // 
-            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(194, 324);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -200,7 +201,7 @@
             // 
             // panel_currentPlayer
             // 
-            this.panel_currentPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.panel_currentPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.panel_currentPlayer.Location = new System.Drawing.Point(269, 322);
             this.panel_currentPlayer.Margin = new System.Windows.Forms.Padding(2);
             this.panel_currentPlayer.Name = "panel_currentPlayer";
@@ -221,7 +222,7 @@
             // 
             // label5
             // 
-            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(202, 296);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
@@ -232,7 +233,7 @@
             // 
             // numericUpDown_connectk
             // 
-            this.numericUpDown_connectk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.numericUpDown_connectk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.numericUpDown_connectk.Location = new System.Drawing.Point(281, 293);
             this.numericUpDown_connectk.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown_connectk.Maximum = new decimal(new int[] {
