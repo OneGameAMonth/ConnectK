@@ -16,5 +16,10 @@ namespace Connect4
         {
             InitializeComponent();
         }
+
+        private void button_return_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
