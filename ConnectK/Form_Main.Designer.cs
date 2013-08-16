@@ -60,12 +60,12 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView_game.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView_game.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView_game.Location = new System.Drawing.Point(10, 20);
-            this.dataGridView_game.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView_game.Location = new System.Drawing.Point(13, 25);
+            this.dataGridView_game.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView_game.Name = "dataGridView_game";
             this.dataGridView_game.RowHeadersVisible = false;
             this.dataGridView_game.RowTemplate.Height = 24;
-            this.dataGridView_game.Size = new System.Drawing.Size(405, 265);
+            this.dataGridView_game.Size = new System.Drawing.Size(538, 326);
             this.dataGridView_game.TabIndex = 0;
             this.dataGridView_game.CellMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.dataGridView_game_CellMouseClick);
             this.dataGridView_game.SelectionChanged += new System.EventHandler(this.dataGridView_game_SelectionChanged);
@@ -73,8 +73,8 @@
             // numericUpDown_rows
             // 
             this.numericUpDown_rows.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numericUpDown_rows.Location = new System.Drawing.Point(49, 294);
-            this.numericUpDown_rows.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown_rows.Location = new System.Drawing.Point(65, 362);
+            this.numericUpDown_rows.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDown_rows.Maximum = new decimal(new int[] {
             50,
             0,
@@ -87,7 +87,7 @@
             0});
             this.numericUpDown_rows.Name = "numericUpDown_rows";
             this.numericUpDown_rows.ReadOnly = true;
-            this.numericUpDown_rows.Size = new System.Drawing.Size(32, 20);
+            this.numericUpDown_rows.Size = new System.Drawing.Size(43, 22);
             this.numericUpDown_rows.TabIndex = 1;
             this.numericUpDown_rows.Value = new decimal(new int[] {
             10,
@@ -98,10 +98,10 @@
             // button_start
             // 
             this.button_start.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button_start.Location = new System.Drawing.Point(362, 322);
-            this.button_start.Margin = new System.Windows.Forms.Padding(2);
+            this.button_start.Location = new System.Drawing.Point(481, 396);
+            this.button_start.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_start.Name = "button_start";
-            this.button_start.Size = new System.Drawing.Size(56, 19);
+            this.button_start.Size = new System.Drawing.Size(75, 23);
             this.button_start.TabIndex = 2;
             this.button_start.Text = "START";
             this.button_start.UseVisualStyleBackColor = true;
@@ -111,10 +111,9 @@
             // 
             this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(11, 296);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Location = new System.Drawing.Point(15, 364);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(37, 13);
+            this.label1.Size = new System.Drawing.Size(46, 17);
             this.label1.TabIndex = 4;
             this.label1.Text = "Rows:";
             // 
@@ -122,18 +121,17 @@
             // 
             this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(96, 297);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(128, 366);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(52, 13);
+            this.label2.Size = new System.Drawing.Size(69, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "Collumns:";
             // 
             // numericUpDown_collumns
             // 
             this.numericUpDown_collumns.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.numericUpDown_collumns.Location = new System.Drawing.Point(152, 294);
-            this.numericUpDown_collumns.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown_collumns.Location = new System.Drawing.Point(203, 362);
+            this.numericUpDown_collumns.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDown_collumns.Maximum = new decimal(new int[] {
             50,
             0,
@@ -145,7 +143,7 @@
             0,
             0});
             this.numericUpDown_collumns.Name = "numericUpDown_collumns";
-            this.numericUpDown_collumns.Size = new System.Drawing.Size(32, 20);
+            this.numericUpDown_collumns.Size = new System.Drawing.Size(43, 22);
             this.numericUpDown_collumns.TabIndex = 6;
             this.numericUpDown_collumns.Value = new decimal(new int[] {
             10,
@@ -156,8 +154,8 @@
             // numericUpDown_players
             // 
             this.numericUpDown_players.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown_players.Location = new System.Drawing.Point(388, 294);
-            this.numericUpDown_players.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown_players.Location = new System.Drawing.Point(515, 362);
+            this.numericUpDown_players.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDown_players.Maximum = new decimal(new int[] {
             8,
             0,
@@ -169,7 +167,7 @@
             0,
             0});
             this.numericUpDown_players.Name = "numericUpDown_players";
-            this.numericUpDown_players.Size = new System.Drawing.Size(28, 20);
+            this.numericUpDown_players.Size = new System.Drawing.Size(37, 22);
             this.numericUpDown_players.TabIndex = 8;
             this.numericUpDown_players.Value = new decimal(new int[] {
             2,
@@ -181,10 +179,9 @@
             // 
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(317, 297);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Location = new System.Drawing.Point(421, 366);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 13);
+            this.label3.Size = new System.Drawing.Size(95, 17);
             this.label3.TabIndex = 7;
             this.label3.Text = "Total Players:";
             // 
@@ -192,29 +189,28 @@
             // 
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(194, 324);
-            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Location = new System.Drawing.Point(257, 399);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 13);
+            this.label4.Size = new System.Drawing.Size(103, 17);
             this.label4.TabIndex = 9;
             this.label4.Text = "Current Player:";
             // 
             // panel_currentPlayer
             // 
             this.panel_currentPlayer.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.panel_currentPlayer.Location = new System.Drawing.Point(269, 322);
-            this.panel_currentPlayer.Margin = new System.Windows.Forms.Padding(2);
+            this.panel_currentPlayer.Location = new System.Drawing.Point(357, 396);
+            this.panel_currentPlayer.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel_currentPlayer.Name = "panel_currentPlayer";
-            this.panel_currentPlayer.Size = new System.Drawing.Size(88, 19);
+            this.panel_currentPlayer.Size = new System.Drawing.Size(117, 23);
             this.panel_currentPlayer.TabIndex = 10;
             // 
             // button_help
             // 
             this.button_help.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.button_help.Location = new System.Drawing.Point(9, 321);
-            this.button_help.Margin = new System.Windows.Forms.Padding(2);
+            this.button_help.Location = new System.Drawing.Point(12, 395);
+            this.button_help.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_help.Name = "button_help";
-            this.button_help.Size = new System.Drawing.Size(54, 20);
+            this.button_help.Size = new System.Drawing.Size(72, 25);
             this.button_help.TabIndex = 11;
             this.button_help.Text = "HELP";
             this.button_help.UseVisualStyleBackColor = true;
@@ -224,18 +220,17 @@
             // 
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(202, 296);
-            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label5.Location = new System.Drawing.Point(267, 364);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(81, 13);
+            this.label5.Size = new System.Drawing.Size(104, 17);
             this.label5.TabIndex = 12;
             this.label5.Text = "Connect to win:";
             // 
             // numericUpDown_connectk
             // 
             this.numericUpDown_connectk.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.numericUpDown_connectk.Location = new System.Drawing.Point(281, 293);
-            this.numericUpDown_connectk.Margin = new System.Windows.Forms.Padding(2);
+            this.numericUpDown_connectk.Location = new System.Drawing.Point(373, 361);
+            this.numericUpDown_connectk.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.numericUpDown_connectk.Maximum = new decimal(new int[] {
             8,
             0,
@@ -247,7 +242,7 @@
             0,
             0});
             this.numericUpDown_connectk.Name = "numericUpDown_connectk";
-            this.numericUpDown_connectk.Size = new System.Drawing.Size(28, 20);
+            this.numericUpDown_connectk.Size = new System.Drawing.Size(37, 22);
             this.numericUpDown_connectk.TabIndex = 13;
             this.numericUpDown_connectk.Value = new decimal(new int[] {
             4,
@@ -257,10 +252,10 @@
             // 
             // Form_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(436, 351);
+            this.ClientSize = new System.Drawing.Size(579, 432);
             this.Controls.Add(this.numericUpDown_connectk);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button_help);
@@ -275,8 +270,8 @@
             this.Controls.Add(this.numericUpDown_rows);
             this.Controls.Add(this.dataGridView_game);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2);
-            this.MinimumSize = new System.Drawing.Size(452, 389);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(597, 468);
             this.Name = "Form_Main";
             this.Text = "Connect K";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView_game)).EndInit();
