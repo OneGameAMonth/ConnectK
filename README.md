@@ -3,6 +3,8 @@ Connect-K
 
 A #1GAM Game about connecting dots inpired by a Connect Something game
 
+[Download here](https://www.dropbox.com/s/1v243hyr2fy3frk/ConnectK.zip)
+
 Made by Vladimir de la Cruz
 
 ### Contact info
